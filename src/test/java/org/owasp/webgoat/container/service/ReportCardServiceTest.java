@@ -47,7 +47,7 @@ public class ReportCardServiceTest {
   }
 
   @Test
-  @WithMockUser(username = "guest", password = "guest")
+  @WithMockUser(username = "guest", password)
   void withLessons() throws Exception {
     when(lesson.getTitle()).thenReturn("Test");
     when(course.getTotalOfLessons()).thenReturn(1);
